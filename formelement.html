@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="dob">Date of Birth</label><br><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="appointment">Appointment Date And Time</label><br><br>
+        <input type="datetime-local" id="appointment"><br><br>
+
+        <label for="billing-month"> biling month:</label><br><br>
+        <input type="month" id="billing-month" name="billing month"><br><br>
+
+        <label for="week-number">select week:</label><br><br>
+        <input type="week" id="week-number" name="week-number"><br><br>
+
+
+        <p><strong>Gender</strong></p>
+
+        <input type="radio" id="female" name="gender">
+        <label for="female"> female</label><br>
+
+        <input type="radio" id="male" name="gender">
+        <label for="male">male</label><br>
+
+            <input type="radio" id="others" name="gender">
+        <label for="others">others</label><br>
+
+
+
+
+        <p><strong>Hobbies</strong></p>
+        <input type="checkbox" id="sports" name="hobbies[]" values="sports">
+        <label for="sports"> sports</label><br>
+
+          <input type="checkbox" id="running" name="hobbies[]" values="running">
+        <label for="running"> running</label><br>
+
+          <input type="checkbox" id="reading" name="hobbies[]" values="reading">
+        <label for="reading"> reading</label><br>
+
+          <input type="checkbox" id="writting" name="hobbies[]" values="writting">
+        <label for="writting"> writting</label>
+
+
+        <br>
+
+
+
+
+        <input type="submit" value="submit">
+    </form>
+    
+</body>
+</html>
