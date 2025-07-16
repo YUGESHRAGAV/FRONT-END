@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>check the console for output</h1>
+    <script>
+        let a=10;
+        let b=20;
+        console.log("\n arithmetic operator");
+        console.log("a+b",a+b);
+        console.log("a-b",a-b);
+        console.log("a*b",a*b);
+        console.log("a/b",a/b);
+        console.log("a%b",a%b);
+        console.log("\n arithmetic operator");
+        let x=5;
+        x+=2;
+        let y=0;
+        console.log("x after x+=2",x);
+        console.log("\n comparision opreator")
+        console.log("y==7",y==7);//true(type coerction)
+        console.log("y==7",y===7);//false(strict equality)
+        console.log("y<=7",y<=7);//trule(type coerction)
+
+        console.log("Ternary operator");
+        let age=18;
+        let result=(age>=18?"granted":"denied");
+        console.log("result"+result);
+        console.log("Logical operator");
+        let isAdult ="true";
+        let hasId="false";
+        console.log("isadult && hasid",isAdult && hasId);//false
+        console.log("isadult || hasid",isAdult || hasId);//false
+        console.log("!isadult",!isAdult);
+
+    </script>
+    
+</body>
+</html>
