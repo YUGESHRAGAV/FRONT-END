@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>my colors</h1>
+    <p id="demo">show me next color</p>
+    <button onclick="shownextcolors()"> show next color</button>
+    <script>
+        const colors=["red","blue","green","yellow"];
+        let currentIndex=0;
+        function shownextcolors()
+        {
+            if(currentIndex<colors.length)
+        {
+            document.getElementById("demo").innerText=colors[currentIndex];
+            currentIndex++;
+        }
+        else{
+            document.getElementById("demo").innerText="no more colors";
+        }
+        }
+    </script>
+    
+</body>
+</html>
